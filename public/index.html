@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenity Therapy Space</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <img src="/public/logo/WhatsApp Image 2024-09-24 at 17.00.40.jpeg" alt="My Logo" class="logo"> <!-- Logo Image -->
+        <h1>Serenity Therapy Space</h1>
+
+        <section class="content-editor">
+            <h2>Edit Content</h2>
+            <textarea id="content-editor"></textarea>
+            <button onclick="saveContent()">Save Content</button>
+        </section>
+
+        <section class="media-upload">
+            <h2>Media Upload</h2>
+            <input type="file" id="media-upload" multiple>
+            <button onclick="uploadMedia()">Upload Media</button>
+        </section>
+
+        <section class="media-gallery">
+            <h3>Uploaded Media</h3>
+            <div id="media-gallery"></div>
+        </section>
+
+        <section class="work-section">
+            <h3>Work Section</h3>
+            <div id="work-section"></div>
+        </section>
+
+        <section class="booking-section">
+            <h2>Book an Appointment</h2>
+            <form id="booking-form" onsubmit="submitBooking(event)">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="date" id="date" required>
+                <button type="submit">Book Appointment</button>
+            </form>
+            <div id="booking-message"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
